@@ -1,5 +1,3 @@
-function somador(n1, n2){
-    soma = n1 + n2
-    return soma
+export function somador(n1, n2){
+    return console.log(n1 + n2)
 }
-
