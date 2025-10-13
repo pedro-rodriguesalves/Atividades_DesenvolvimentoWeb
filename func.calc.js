@@ -1,14 +1,13 @@
-function calculadora (n1, n2, op){
+export function calculadora (n1, n2, op){
     if (op === '+'){
-        return n1 + n2
+        return console.log(n1 + n2)
     }else if (op === '-'){
-        return n1 - n2
+        return console.log(n1 - n2)
     }else if (op === '*'){
-        return n1 * n2
+        return console.log(n1 * n2)
     }else if (op === '/'){
-        return n1 / n2
+        return console.log(n1 / n2)
     }else{
-        return 'Fora do escopo!'
+        return console.log('Fora do escopo!')
     }
 }
-
