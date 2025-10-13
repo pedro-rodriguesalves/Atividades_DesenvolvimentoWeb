@@ -1,15 +1,14 @@
-function triangulo_check(n1, n2, n3){
+export function triangulo_check(n1, n2, n3){
     if ( n1 + n2 > n3 && n1 + n3 > n2 && n2 + n3 > n1){
         if ( n1 === n2 && n2 === n3){
-            return 'Equilateral!'
+            return console.log('Equilateral!')
         }else if ( n1 == n2 || n1 == n3 || n2 == n3){
-            return 'Isosceles!'
+            return console.log('Isosceles!')
         }else{
-            return 'Scalene!'
+            return console.log('Scalene!')
         }
 
     }else{
-        return 'None'
+        return console.log('None')
     }
 }
-
