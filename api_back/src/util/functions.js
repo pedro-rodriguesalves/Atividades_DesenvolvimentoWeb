@@ -3,8 +3,8 @@ export function transformacao_texto(texto, funcao_transformacao) {
         return texto.toLowerCase();
     }else if (funcao_transformacao == "uppercase") {
         return texto.toUpperCase();
-    }else
-        return ("404 - Função de transformação não encontrada");
+    }
+    throw new HttpError(404, "Função de transformação não encontrada");
 }
 
 export function verificador(numeros, funcao_verificacao) {
@@ -25,8 +25,8 @@ export function verificador(numeros, funcao_verificacao) {
             }
         }
         return max;     
-    }else
-        return ("404 - Função de verificação não encontrada");
+    }
+    throw new HttpError(404, "Função de transformação não encontrada");
 }
 
 

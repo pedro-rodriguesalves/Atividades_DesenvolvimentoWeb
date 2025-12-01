@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { transformacao_texto, verificador } from '../until/functions.js';
+import { transformacao_texto, verificador } from './util/functions.js';
 
 
 const router = Router();
