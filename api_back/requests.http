@@ -1,0 +1,26 @@
+### Apenas Hello World.
+GET http://localhost:3000/
+
+### Texto com lowercase.
+POST http://127.0.0.1:3000/util/lowercase
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### Texto com uppercase.
+POST http://127.0.0.1:3000/util/uppercase
+Content-Type: application/json
+
+{
+  "input": "Lorem Ipsum"
+}
+
+### Número mínimo.
+GET http://127.0.0.1:3000/util/minimum/?input=10,1,100
+
+
+### Número máximo.
+GET http://127.0.0.1:3000/util/maximum/?input=10,1,100
+
